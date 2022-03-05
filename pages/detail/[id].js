@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
+import { FacebookIcon, FacebookShareButton } from "react-share";
 import axiosInstance from "../../axios/axiosInstance";
 const BUCKET = "https://fighter-files-dev.s3.ap-southeast-1.amazonaws.com";
 
@@ -23,6 +24,9 @@ export default function Detail({ content }) {
         <h1>Detail Content</h1>
         <h4>{content.title}</h4>
         <p>{content.description}</p>
+        <FacebookShareButton url={`https://fakhrulnugroho.github.id/detail/${content.id}`}>
+          <FacebookIcon size={30} /> Share To Facebook
+        </FacebookShareButton>
       </div>
     </div>
   );
