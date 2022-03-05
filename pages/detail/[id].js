@@ -33,10 +33,10 @@ export default function Detail({ content }) {
         <h1>Detail Content</h1>
         <h4>{content.title}</h4>
         <p>{content.description}</p>
-        <FacebookShareButton url={`https://fakhrulnugroho.github.id/detail/${content.id}`}>
+        <FacebookShareButton url={`https://fakhrulnugroho.github.io/detail/${content.id}`}>
           <FacebookIcon size={30} /> Share To Facebook
         </FacebookShareButton>
-        <TwitterShareButton url={`https://fakhrulnugroho.github.id/detail/${content.id}`}>
+        <TwitterShareButton url={`https://fakhrulnugroho.github.io/detail/${content.id}`}>
           <TwitterIcon size={30} /> Share To Twitter
         </TwitterShareButton>
       </div>
