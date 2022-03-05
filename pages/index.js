@@ -24,7 +24,7 @@ export default function Home({ contents }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const { data } = await axiosInstance.get("fighter-content");
   return {
     props: { contents: data }, // will be passed to the page component as props
